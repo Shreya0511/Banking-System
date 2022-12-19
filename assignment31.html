@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment_3</title>
+  <style>
+                  .container {
+        box-sizing: border-box;
+        background-color: white;
+        width: 100%;
+        height: 980px;
+        margin : auto;
+        margin : 0px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .body {
+        margin: 0px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        overflow: hidden;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .namelogo{
+        background-color:  rgb(9, 68, 127);
+        background-color: rgb(12,55,106);
+
+        display : flex;
+        flex-direction : row;
+      }
+      .banklogo{
+        width : 100px;
+        padding : 15px;
+        justify-content : left;
+      }
+      .bankname{
+        align-items : center;
+        margin : auto;
+        font-size : 40px;
+        color : white;
+        
+      }
+      .menubar{
+        float : right;
+
+      }
+      .newsattop{
+        background-color: rgb(216, 253, 253);
+        color : red;
+        height : 30px;
+        align-items: center;
+        align-content: center;
+        padding-top : 5px;
+        
+
+
+
+      }
+
+      .kuch{
+        list-style : none;
+        color : purple;
+        text-decoration : none;
+        padding : 2px;
+        font-size : 20px;
+      }
+      .login{
+        color : purple;
+        padding : 50px;
+        padding-bottom : 30px;
+        text-align : center;
+        font-size : 40px;
+      }
+      form{
+        display : flex;
+        flex-direction : column;
+        margin : auto;
+        justify-content : center;
+        align-items : center;
+        background-color:  rgb(245, 236, 252);
+        height : 300px;
+        box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+
+        width : 30%;
+
+        transition : all;
+      }
+      .five:hover{
+        background-color: rgb(58, 11, 139);
+        width : 82px;
+        color : white;
+
+      }
+      label{
+        font-size : 22px;
+        color : purple;
+      }
+      .one,.two{
+        padding : 20px;
+        /* position : fixed; */
+      }
+      input[type = text]{
+        padding : 10px;
+        margin : auto;
+        border : 1px solid rgb(37, 198, 227);
+      }
+      input[type = password]{
+        padding : 10px;
+        margin : auto;
+        border : 1px solid rgb(37, 198, 227);
+      }
+      .two{
+        margin-left : 5px;
+      }
+      button[type = loginnow]{
+        /* padding : 20px; */
+        
+        background-color:  purple;
+        border :none;
+        color : white;
+        height : 30px;
+        width : 80px;
+        cursor : pointer;
+        
+      }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="namelogo">
+      <img
+        class="banklogo"
+        ;
+        src = "https://www.javatpoint.com/fullformpages/images/sbi.png"
+        ;align="left"
+        ;
+        alt="bank is here"
+      />
+      <h1 class="bankname">State Bank of India</h1>
+    </div>
+    <div>
+      <marquee class = "newsattop"; direction = "left">Lorem, ipsum dolor sit amet consectetur 
+        adipisicing elit. Fuga autem ratione ea voluptas accusantium, repellat illum 
+        ipsa labore dolores, nemo id recusandae mollitia.</marquee>
+      </div>
+
+    <div class="menubar">
+      <table class="menubar">
+        <tr>
+          <th><a class = "kuch";href="www.google.com">Home</a>|</th>
+          <th><a class = "kuch";href="www.geeksforgeeks.com">About Us</a>|</th>
+          <th><a class = "kuch";href="assignment3.html">Log in</a></th>
+        </tr>
+      </table></div>
+      <h1 class = "login">Login</h1>
+      <form action = "assignment5.php"; method = "post">
+        <div class = "one">
+          <label for = "Username">Username: </label>
+          <input type = "text"; placeholder = "Name"; name = "fname"></input>
+        </div>
+        <div class = "two">
+          <label for = "Pw">Password: </label>
+          <input type = "password"; placeholder="*****"; name = "pw"></input>
+        </div>
+        <button type = "Loginnow"; class = "five">Login Now</button>
+      </form>
+    
+    </div>
+
+  
+</body>
+</html>

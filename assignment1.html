@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank form</title>
+    <style>
+            .body {
+        margin: 0px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        overflow: hidden;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        box-sizing: border-box;
+        background-color: #F4F4F4A6;
+        width: 100%;
+        /* height: 100vh; */
+        margin : auto;
+        transition : all;
+      }
+      .container a hover {
+        color: red;
+      }
+      .container table th a {
+        list-style: none;
+        text-decoration: none;
+      }
+      .menubar {
+        float : right;
+        height : 25px;
+        color: purple;
+        padding : 5px;
+        padding-bottom : 50px;
+        text-decoration : none;
+        font-size : 20px;
+      }
+      .bankname {
+        margin: auto;
+        text-align : center;
+        font-size : 40px;
+        color : white;
+      }
+      .banklogo {
+        /* width: 120px; */
+        height : 80px;
+        /* padding : 15px; */
+        justify-content : left;
+        padding-left : 30px;
+        padding-top : 15px;
+      }
+      .namelogo{
+        background-color: rgb(9, 68, 127);
+        background-color: rgb(12,55,106);
+        display : flex;
+        flex-direction : row;
+        height :100px;
+      }
+      .banner{
+        padding : 10px;
+        padding-top : 100px;
+      }
+      .bannerasli {
+        width: 70%;
+        height: 300px;
+      }
+      .news {
+        height : 300px;
+        /* width : 30%; */
+        background-color: rgb(216, 253, 253);
+      }
+      .newslist {
+        color: red;
+      }
+      .classper{
+        float : left;
+        display : inline;
+        width : 50%;
+        border : 2px solid blue; 
+         margin : 0px;
+        padding-right : 0px;
+
+      }
+      .info{
+      
+        display : flex;
+        margin : 12px;
+
+        
+      }
+      .classcooper, .classper{
+      
+        width : 50%;
+        padding : 23px 12px;
+        border : 2px solid rgb(37, 198, 227);
+        margin : 5px;
+
+      }
+      .newsattop{
+        background-color: rgb(216, 253, 253);
+        color : purple;
+        height : 30px;
+        align-items: center;
+        align-content: center;
+        padding-top : 5px;
+        
+
+
+
+      }
+      .kuch{
+        color : rgb(172, 29, 172);
+        cursor : pointer;
+      }
+      .about{
+        text-align : center;
+        color : darkBlue; 
+      }
+      .topic, .servicetopic{
+        color : darkblue;
+      }
+      .servicetopic{
+        text-align : center;
+        font-weight: bold;
+      }
+      .images{
+        padding-top : 15px;
+      }
+      .fd{
+        width : 250px;
+      cursor : pointer;
+      padding : 2px;
+ 
+      box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+  }
+  .fd:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    
+  }
+        .p1{
+            color : rgb(87, 87, 251);
+        }
+        .href{
+            color : rgb(39, 39, 239);
+        }
+        .images{
+          display : flex;
+          flex-direction : row;
+          justify-content : space-around;
+          /* justify-content : center; */
+          
+          
+        }
+        #acopening{
+          width : 250px;
+          height : 250px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="namelogo">
+        <img
+          class="banklogo";
+          src = "https://www.javatpoint.com/fullformpages/images/sbi.png"
+
+          ;align="left"
+          ;
+          alt="bank is here"
+        />
+        <h1 class="bankname">State Bank of India</h1>
+      </div>
+      <div>
+      <marquee class = "newsattop"; direction = "left">Lorem, ipsum dolor sit amet consectetur 
+        adipisicing elit. Fuga autem ratione ea voluptas accusantium, repellat illum 
+        ipsa labore dolores, nemo id recusandae mollitia.</marquee>
+      </div>
+      <div class="menubar1">
+        <table class="menubar">
+          <tr>
+            <th><a class = "kuch" href="www.google.com">Home</a>|</th>
+            <th><a class = "kuch" href="www.google.com">About Us</a>|</th>
+            <th><a class = "kuch" href= "assignment3.html">Login</a></th>
+          </tr>
+        </table>
+      </div>
+      <div class="banner">
+        <img
+          class="bannerasli"
+          ;
+          src = "https://www.gstsuvidhacenters.com/WebsiteAssets/images/CustomerServicePoint/Banner2.jpg";align = "center";alt = "Not available">
+          <!-- src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYyqH1NIFuDMPKbnjNwtdJcaOwDOffg-nmgTshG9q&s" -->
+          <!-- ;align="center"
+          ;
+          alt="banner is here"
+        > -->
+
+        <marquee class="news" ; width = "250px";  height="250px;" direction="up">
+          <ul class="newlist">
+            <li class="newslist">
+              Mandatory profile password change after 365 days is introduced for
+              added security
+            </li>
+            <br>
+            <li class="newslist">
+              Bank never asks for otp/password/pin/cvv details on phone, message
+              or email. Please don't click on any link received on Email or
+              message asking your Bank details.
+            </li>
+            <br>
+            <li class="newslist">
+              For added security reasons new functionality has been introduced
+              to maintain per day and per transaction limit for general merchant
+              payment
+            </li>
+            <br>
+            <li class="newslist">
+              call us toll free on 12345677 and 12875649775 to get wide range of
+              services through the bank contact center
+            </li>
+          </ul>
+        </marquee>
+      </div>
+      <h2 class = "about">About us</h2>
+
+      <div class="info">
+        <div class="classper">
+          
+        <h3 class = "topic">Personal Banking</h3>
+        <p>Corporate Banking application to administer and manage non personal accounts online.bank is not
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eius dolor assumenda, illum sint sunt.
+
+        </p>
+        <table class = "person">
+            <th class = "p1"><a class = "href"; href = "www.google.com">New User Registration|</a></th>
+            <th class = "p1"><a class = "href"; href = "www.google.com">How Do I Do?|</a></th>
+            <th class = "p1"><a class = "href"; href = "www.google.com">Customer Care|</a></th>
+            <th class = "p1"><a class = "href"  href = "assignment3.html">Lock and Unlock</a></th>
+        </table>
+
+        </div>
+        <div class = "classcooper">
+            <h3 class = "topic">Coorporate Banking</h3>
+            <p>Corporate Banking application to administer and manage non personal accounts Lorem ipsum
+               dolor sit amet consectetur adipisicing elit. Eos magni mollitia nemo aspernatur illum. Esse.</p>
+            <table class = "coorporate">
+                <th class = "p1"><a class = "href"; href = "www.google.com">New Coorporate registration|</a></th>
+                <th class = "p1"><a class = "href"; href = "www.google.com">How do i do?|</a></th>
+                <th class = "p1"><a class = "href"; href = "www.google.com">Customer Care|</a></th>
+                <th class = "p1"><a class = "href"; href = "www.google.com">Loan</a></th>
+            </table>
+        </div>
+      </div>
+      <div class="services">
+        <h2 class = "servicetopic">Services</h2>
+        <div class = "images">
+        
+        <a href = "assignment2.html"><img src = "https://pbs.twimg.com/media/EbVbdvhWAAEzMOk.png";alt="account opening"; class = "fd"; id = "acopening"></a>
+        <img src = "data:image/jpeg;base64,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"; alt = "fixed deposit"; class = "fd"; id = "fixeddeposit">
+        <img src = "https://static9.depositphotos.com/1003938/1122/v/380/depositphotos_11225780-stock-illustration-funny-cartoon-manager.jpg?forcejpeg=true" alt="creditcard"; class = "fd">
+        <img src="https://thumbs.dreamstime.com/b/fast-loan-logo-design-fast-loan-logo-design-vector-illustration-143277242.jpg" alt=""; class = "fd">
+
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

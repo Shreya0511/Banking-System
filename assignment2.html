@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+              .container {
+        box-sizing: border-box;
+        width: 100%;
+        height: 980px;
+        margin : 0px;
+      }
+      .body{
+        margin : 0px;
+        position : fixed;
+        top : 0px;
+        left : 0px;
+        right : 0px;
+        overflow : hidden;
+
+      }
+      *{
+        padding : 0px;
+        margin : 0px;
+        box-sizing: border-box;
+      }
+      .namelogo{
+        background-color: rgb(105, 217, 239);
+        background-color: rgb(12,55,106);
+
+        display : flex;
+        flex-direction : row;
+      }
+      .banklogo{
+        width : 100px;
+        padding : 15px;
+        justify-content : left;
+      }
+      .bankname{
+        align-items : center;
+        margin : auto;
+        font-size : 40px;
+        color : white;
+        
+      }
+      .menubar{
+        float : right;
+
+      }
+      .newsattop{
+        background-color: rgb(216, 253, 253);
+        color : red;
+        height : 30px;
+        align-items: center;
+        align-content: center;
+        padding-top : 5px;
+      }
+
+      .nav{
+        list-style : none;
+        color : purple;
+        text-decoration : none;
+        padding : 2px;
+        font-size : 20px;
+        cursor : pointer;
+      }
+      .ac{
+        color : purple;
+        padding : 50px;
+        text-align: center;
+
+      }
+      button[type = submit]{
+        /* padding : 20px; */
+        background-color : purple;
+        margin : 20px;
+        height : 30px;
+        width : 80px;
+        cursor : pointer;
+        color : white;
+        border-style : none;
+        /* border : 2px solid rgb(37, 198, 227); */
+
+      }
+      button[type = reset]{
+        /* padding : 20px; */
+        background-color: purple;
+        height : 30px;
+        width : 80px;
+        margin : 20px;
+        cursor : pointer;
+        color : white;
+        border-style : none;
+        /* border : 2px solid rgb(37, 198, 227); */
+      }
+      form{
+        /* border : 2px solid rgb(37, 198, 227); */
+        width : 40%;
+        height : 400px;
+        margin : auto;
+        background-color: rgb(255, 212, 255);
+        background-color:  rgb(245, 236, 252);
+        box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+
+        display : flex;
+        flex-direction : column;
+        align-items : center;
+        transition : all;
+        
+      }
+      .five:hover{
+        background-color : rgb(45, 6, 130);
+        color : white;
+
+      }
+      .six:hover{
+        background-color: rgb(45, 6, 130);
+      }
+    
+
+      
+
+      input[type = text]{
+        padding : 12px;
+        border : 1px solid rgb(37, 198, 227);
+        
+
+      }
+      label
+     {
+    /* padding : 50px 130px; */
+    color : purple;
+    font-size : 20px;
+    margin : auto;
+    display : inline;
+
+      }
+      .one, .two, .three, .four{
+        margin : 10px;
+      }
+      .one{
+        margin-top : 60px;
+      }
+      input[type = textarea]{
+        padding : 20px;
+        /* width : 145px; */
+        border : 1px solid rgb(37, 198, 227);
+        /* margin-left: 60px; */
+     
+      }
+      .two{
+        margin-left : 95px;
+      }
+      .three{
+        margin-left : 105px;
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="namelogo">
+          <img
+            class="banklogo"
+            ;
+            src = "https://www.javatpoint.com/fullformpages/images/sbi.png"
+
+            ;align="left"
+            ;
+            alt="bank is here"
+          />
+          <h1 class="bankname">State Bank of India</h1>
+        </div>
+        <div>
+          <marquee class = "newsattop"; direction = "left">Lorem, ipsum dolor sit amet consectetur 
+            adipisicing elit. Fuga autem ratione ea voluptas accusantium, repellat illum 
+            ipsa labore dolores, nemo id recusandae mollitia.</marquee>
+          </div>
+    
+        <div class="menubar">
+          <table class="menubar">
+            <tr>
+              <th><a class = "nav" href="Main_page.php">Dashboard</a>|</th>
+              <th><a class = "nav" href="assignment2.html">Open A/C</a>|</th>
+              <th><a class = "nav" href="www.leetcode.com">Loan</a>|</th>
+              <th><a class = "nav" href ="www.google.com">Deposit</a></th>
+            </tr>
+          </table></div>
+          <h1 class = "ac">ACCOUNT OPENING</h1>
+          <!-- <section> -->
+            <form action = "insertion_ac_opening.php"; method = "post">
+                <!-- <h1 class = "ac">ACCOUNT OPENING</h1> -->
+
+            <div class = "one">
+            <label for = "user">Customer Name :  </label>
+            <input type = "text"; placeholder = "Name"; name = "fname"></input><br></div>
+            <div class = "two">
+            <label for = "ad">Address :    </label>
+            <input type = "textarea"; placeholder = "Address"; rows = "2"; cols = "30"; name = "addresss"></input><br></div>
+            <div class = "three">
+            <label for = "City">City :   </label>
+            <input type = "text"; placeholder = "city"; name = "city"></input><br></div>
+            <div class = "four">
+            <button type = "submit"; value = "submit"; class = "five">Submit</button>
+            <button type = "reset"; value = "Reset"; class = "six">Reset</button></div></form>
+            
+            
+          <!-- </section> -->
+        </div>
+  
+</body>
+</html>
